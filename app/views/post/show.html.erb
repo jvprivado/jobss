@@ -195,6 +195,9 @@
   
 
 <div class="flex flex-col space-y-6">
+
+
+<!--
   <div class="max-w-3xl mx-auto sm:rounded-lg sm:shadow-sm p-4 sm:mt-8 sm:mb-4 bg-blue-50">
   <div class="flex">
     <div class="shrink-0">
@@ -215,10 +218,10 @@
 </div>      </div>
     </div>
   </div>
-</div>
+</div>-->
 
     <h1 class="text-3xl font-bold leading-tight text-gray-900 mx-4 lg:mx-0 mt-8 lg:mt-16">
-      Your developer profile
+      Candidate profile
     </h1>
 
 
@@ -228,7 +231,7 @@
       <div class="md:grid md:grid-cols-3 md:gap-6">
         <div class="md:col-span-1">
           <h2 class="text-lg font-medium leading-6 text-gray-900">Profile</h2>
-          <p class="mt-2 text-sm text-gray-500">This information will be displayed publicly so be careful what you share.</p>
+          <p class="mt-2 text-sm text-gray-500"></p>
         </div>
 
         <div class="mt-5 md:mt-0 md:col-span-2">
@@ -330,7 +333,7 @@
 
 
             <div data-controller="file-upload" data-file-upload-visibility-class="hidden" data-file-upload-loading-class="opacity-50">
-              <span class="block text-sm font-medium text-gray-700">Avatar</span>
+              <span class="block text-sm font-medium text-gray-700">Candidate Avatar</span>
               <div class="mt-1 flex items-center">
                 <div class="relative">
                   <picture data-file-upload-target="picture">
@@ -404,15 +407,6 @@
           <label class="text-lg font-medium leading-6 text-gray-900" for="developer_bio">Cover Letter</label>
           <p class="mt-2 text-sm text-gray-500">Highlight your skills + interest and experience in detail. A cover is your advert for employers.</p>
 
-          <h4 class="font-medium uppercase tracking-wide text-gray-500 text-sm mt-4">Example topics</h4>
-          <ul class="text-sm text-gray-500 list-disc list-inside">
-            <li class="mt-1">Your developer origin story</li>
-            <li class="mt-1">A recent milestone or accomplishment</li>
-            <li class="mt-1">Something new you learned</li>
-            <li class="mt-1">What you're passionate about</li>
-            <li class="mt-1">How you can help where others can't</li>
-            <li class="mt-1">Your unique skills that make you awesome</li>
-          </ul>
 
           <p class="mt-4 text-sm text-gray-500">Markdown is supported but links and images are removed.</p>
         </div>
@@ -432,148 +426,15 @@
     <div class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
       <div class="md:grid md:grid-cols-3 md:gap-6">
         <div class="md:col-span-1">
-          <h3 class="text-lg font-medium leading-6 text-gray-900">Work preferences</h3>
-          <p class="mt-2 text-sm text-gray-500">What kind of work are you looking for next?</p>
-        </div>
-
-        <div class="mt-5 md:mt-0 md:col-span-2">
-          <div class="space-y-6">
-            <fieldset>
-              <legend class="text-base font-medium text-gray-900">
-                <div class="flex">
-                  Search status
-                  
-                </div>
-              </legend>
-              <div class="mt-4 space-y-4">
-                <div class="flex items-start">
-                  <div class="h-5 flex items-center">
-                    <input class="focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300" type="radio" value="actively_looking" name="developer[search_status]" id="developer_search_status_actively_looking">
-                  </div>
-                  <div class="ml-3 text-sm">
-                    <label class="font-medium text-gray-700" for="developer_search_status_actively_looking">Actively looking</label>
-                    <p class="text-gray-500">Your profile can get featured on the homepage.</p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <div class="flex items-center h-5">
-                    <input class="focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300" type="radio" value="open" name="developer[search_status]" id="developer_search_status_open">
-                  </div>
-                  <div class="ml-3 text-sm">
-                    <label class="font-medium text-gray-700" for="developer_search_status_open">Open</label>
-                    <p class="text-gray-500">Companies can still find you, but you won't appear on the homepage.</p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <div class="flex items-center h-5">
-                    <input class="focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300" type="radio" value="not_interested" name="developer[search_status]" id="developer_search_status_not_interested">
-                  </div>
-                  <div class="ml-3 text-sm">
-                    <label class="font-medium text-gray-700" for="developer_search_status_not_interested">Not interested</label>
-                    <p class="text-gray-500">Your profile will not appear in search results.</p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <div class="flex items-center h-5">
-                    <input class="focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300" type="radio" value="invisible" name="developer[search_status]" id="developer_search_status_invisible">
-                  </div>
-                  <div class="ml-3 text-sm">
-                    <label class="font-medium text-gray-700" for="developer_search_status_invisible">Invisible</label>
-                    <p class="text-gray-500">Your profile is hidden and can only be seen by yourself.</p>
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-
-            
-              <fieldset>
-                <div>
-                  <legend class="text-base font-medium text-gray-900 w-full">
-                    <div class="flex">
-                      Role type
-                      
-                    </div>
-                  </legend>
-                  <p class="text-sm text-gray-500">Select all roles that you would consider taking.</p>
-                </div>
-                <div class="mt-4 space-y-4">
-                
-                  <div class="flex items-center">
-                    <input name="developer[role_type_attributes][full_time_employment]" type="hidden" value="0" autocomplete="off"><input class="focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300 rounded" type="checkbox" value="1" name="developer[role_type_attributes][full_time_employment]" id="developer_role_type_attributes_full_time_employment">
-                    <label class="ml-3 block text-sm font-medium text-gray-700" for="developer_role_type_attributes_full_time_employment">Full-time employment</label>
-                  </div>
-                </div>
-              </fieldset>
-
-            
-              <fieldset>
-                <div>
-                  <legend class="text-base font-medium text-gray-900 w-full">
-                    <div class="flex">
-                      Role level
-                      
-                    </div>
-                  </legend>
-                  <p class="text-sm text-gray-500">Select all the experience levels you would consider taking.</p>
-                </div>
-                <div class="mt-4 space-y-4">
-                  <div class="flex items-center">
-                    <input name="developer[role_level_attributes][junior]" type="hidden" value="0" autocomplete="off"><input class="focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300 rounded" type="checkbox" value="1" name="developer[role_level_attributes][junior]" id="developer_role_level_attributes_junior">
-                    <label class="ml-3 block text-sm font-medium text-gray-700" for="developer_role_level_attributes_junior">Junior</label>
-                  </div>
-                  <div class="flex items-center">
-                    <input name="developer[role_level_attributes][mid]" type="hidden" value="0" autocomplete="off"><input class="focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300 rounded" type="checkbox" value="1" name="developer[role_level_attributes][mid]" id="developer_role_level_attributes_mid">
-                    <label class="ml-3 block text-sm font-medium text-gray-700" for="developer_role_level_attributes_mid">Mid-level</label>
-                  </div>
-                  <div class="flex items-center">
-                    <input name="developer[role_level_attributes][senior]" type="hidden" value="0" autocomplete="off"><input class="focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300 rounded" type="checkbox" value="1" name="developer[role_level_attributes][senior]" id="developer_role_level_attributes_senior">
-                    <label class="ml-3 block text-sm font-medium text-gray-700" for="developer_role_level_attributes_senior">Senior</label>
-                  </div>
-                  <div class="flex items-center">
-                    <input name="developer[role_level_attributes][principal]" type="hidden" value="0" autocomplete="off"><input class="focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300 rounded" type="checkbox" value="1" name="developer[role_level_attributes][principal]" id="developer_role_level_attributes_principal">
-                    <label class="ml-3 block text-sm font-medium text-gray-700" for="developer_role_level_attributes_principal">Principal / staff</label>
-                  </div>
-                  <div class="flex items-center">
-                    <input name="developer[role_level_attributes][c_level]" type="hidden" value="0" autocomplete="off"><input class="focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300 rounded" type="checkbox" value="1" name="developer[role_level_attributes][c_level]" id="developer_role_level_attributes_c_level">
-                    <label class="ml-3 block text-sm font-medium text-gray-700" for="developer_role_level_attributes_c_level">C-level</label>
-                  </div>
-                </div>
-              </fieldset>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
-      <div class="md:grid md:grid-cols-3 md:gap-6">
-        <div class="md:col-span-1">
           <h3 class="text-lg font-medium leading-6 text-gray-900">Online presence</h3>
           <p class="mt-2 text-sm text-gray-500">Where can people learn more about you and your work?</p>
         </div>
 
         <div class="mt-5 md:mt-0 md:col-span-2">
           <div class="space-y-6">
-            <div>
-              <label class="block text-sm font-medium text-gray-700" for="developer_website">Website</label>
-              <div class="mt-1 flex rounded-md shadow-sm">
-                <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
-                  https://
-                </span>
-                <input class="flex-1 focus:ring-gray-500 focus:border-gray-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300" type="text" name="developer[website]" id="developer_website">
-              </div>
-            </div>
+   
 
 
-
-            <div class="sm:col-start-1 sm:col-end-4">
-              <label class="block text-sm font-medium text-gray-700" for="developer_github">Github</label>
-              <div class="mt-1 flex rounded-md shadow-sm">
-                <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
-                  github.com/
-                </span>
-                <input class="flex-1 focus:ring-gray-500 focus:border-gray-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300" type="text" name="developer[github]" id="developer_github">
-              </div>
-            </div>
 
             <div class="sm:col-start-1 sm:col-end-4">
               <label class="block text-sm font-medium text-gray-700" for="developer_linkedin">Linkedin</label>
@@ -585,100 +446,42 @@
               </div>
             </div>
 
-            <div class="sm:col-start-1 sm:col-end-4">
-              <label class="block text-sm font-medium text-gray-700" for="developer_stack_overflow">Stack Overflow</label>
-              <div class="mt-1 flex rounded-md shadow-sm">
-                <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
-                  stackoverflow/users/
-                </span>
-                <input class="flex-1 focus:ring-gray-500 focus:border-gray-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300" type="text" name="developer[stack_overflow]" id="developer_stack_overflow">
-              </div>
-            </div>
-
-            <div class="sm:col-start-1 sm:col-end-4">
-              <label class="block text-sm font-medium text-gray-700" for="developer_twitter">Twitter</label>
-              <div class="mt-1 flex rounded-md shadow-sm">
-                <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
-                  twitter.com/
-                </span>
-                <input class="flex-1 focus:ring-gray-500 focus:border-gray-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300" type="text" name="developer[twitter]" id="developer_twitter">
-              </div>
-            </div>
-
-            <div>
-              <label class="block text-sm font-medium text-gray-700" for="developer_mastodon">Mastodon</label>
-              <div class="mt-1 flex rounded-md shadow-sm">
-                <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
-                  https://
-                </span>
-                <input class="flex-1 focus:ring-gray-500 focus:border-gray-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300" type="text" name="developer[mastodon]" id="developer_mastodon">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
-      <div class="md:grid md:grid-cols-3 md:gap-6">
-        <div class="md:col-span-1">
-          <h3 id="scheduling" class="text-lg font-medium leading-6 text-gray-900">Scheduling</h3>
-          <p class="mt-2 text-sm text-gray-500">Share your scheduling link (Calendly, SavvyCal, etc.) to make it easier to organize interviews with businesses.</p>
-        </div>
-
-        <div class="mt-5 md:mt-0 md:col-span-2 space-y-4">
-          <div>
-            <div class="flex items-center">
-              <label class="block text-sm font-medium text-gray-700" for="developer_scheduling_link">Scheduling link</label>
+               
+          <fieldset>
+          <legend class="text-base font-medium text-gray-900">
+            <div class="flex">
+              Search status
               
             </div>
-            <div class="mt-1 flex rounded-md shadow-sm">
-              <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
-                https://
-              </span>
-              <input class="flex-1 focus:ring-gray-500 focus:border-gray-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300" type="text" name="developer[scheduling_link]" id="developer_scheduling_link">
+          </legend>
+          <div class="mt-4 space-y-4">
+            <div class="flex items-start">
+              <div class="h-5 flex items-center">
+                <input class="focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300" type="radio" value="actively_looking" name="developer[search_status]" id="developer_search_status_actively_looking">
+              </div>
+              <div class="ml-3 text-sm">
+                <label class="font-medium text-gray-700" for="developer_search_status_actively_looking">Actively looking</label>
+                <p class="text-gray-500">Your profile can get featured on the homepage.</p>
+              </div>
             </div>
+      
+            <div class="flex items-start">
+              <div class="flex items-center h-5">
+                <input class="focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300" type="radio" value="invisible" name="developer[search_status]" id="developer_search_status_invisible">
+              </div>
+              <div class="ml-3 text-sm">
+                <label class="font-medium text-gray-700" for="developer_search_status_invisible">Invisible</label>
+                <p class="text-gray-500">Your profile is hidden and can only be seen by yourself.</p>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
           </div>
         </div>
       </div>
     </div>
 
-    <div class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
-      <div class="md:grid md:grid-cols-3 md:gap-6">
-        <div class="md:col-span-1">
-          <h3 id="notifications" class="text-lg font-medium leading-6 text-gray-900">Email notifications</h3>
-        </div>
-
-        <div class="mt-5 md:mt-0 md:col-span-2 space-y-4">
-          <fieldset>
-            <div class="space-y-4">
-              <div class="flex items-start">
-                <div class="h-5 flex items-center">
-                  <input  type="hidden" value="0" autocomplete="off"><input class="focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300 rounded developer[notifications]" type="checkbox" value="1" id="developer_profile_reminder_notifications">
-                </div>
-                <div class="ml-3 text-sm">
-                  <label class="font-medium text-gray-700" for="developer_profile_reminder_notifications">Profile reminders</label>
-                  <p class="text-gray-500">Periodically remind me to update my developer profile.</p>
-                </div>
-              </div>
-            </div>
-          </fieldset>
-          <fieldset id="feature_notifications">
-            <div class="space-y-4">
-              <div class="flex items-start">
-                <div class="h-5 flex items-center">
-                  <input type="hidden" value="0" autocomplete="off"><input class="focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300 rounded developer[notifications]" type="checkbox" value="1"  id="developer_product_announcement_notifications">
-                </div>
-                <div class="ml-3 text-sm">
-                  <label class="font-medium text-gray-700" for="developer_product_announcement_notifications">Feature announcements</label>
-                  <p class="text-gray-500">Keep me up to date with new product features.</p>
-                </div>
-              </div>
-            </div>
-          </fieldset>
-        </div>
-      </div>
-    </div>
 
     <div class="flex justify-end mt-8 mb-16 mr-4 sm:mr-6 lg:mr-0">
       <button name="button" id="create" type="button" class="group inline-flex justify-center align-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-gray-500 cursor-pointer disabled:cursor-not-allowed enabled:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 ml-3">

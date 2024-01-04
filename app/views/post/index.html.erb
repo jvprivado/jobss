@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <!-- saved from url=(0022)https://railsdevs.com/ -->
-<html lang="en" class="h-full bg-gray-50 js-focus-visible" dir="ltr" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.turbo-progress-bar {
+<html lang="en" class="h-full bg-gray-50 js-focus-visible" dir="ltr" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<style type="text/css">.turbo-progress-bar {
   position: fixed;
   display: block;
   top: 0;
@@ -33,7 +36,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color:rgb(31 41 55 / var(--tw-bg-opacity));
+  background-color: rgb(250 249 246 / var(--tw-bg-opacity));
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -137,17 +140,17 @@
 }</style></head>
 
   <body data-controller="analytics--page-views" class="min-h-full flex flex-col">
-    <div class="flex-1" style="background-color:rgb(255 255 255))">
+    <div class="flex-1" style="background-color:rgb(255 255 255)">
       
       <div class="min-h-full">
   <nav data-controller="toggle" data-toggle-visibility-class="hidden" data-action="toggle-nav-bar@window-&gt;toggle#toggle" class="bg-gray-800 ">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-        <div class="flex items-center justify-between h-16">
+        <div class="items-center justify-between h-16">
   
-          <div class="flex items-center">
+          <div class="flex items-center" style="white-space:normal;">
             <!-- Logo -->
-            <img src="https://i.imgur.com/4Pv8n5k.png" style="width:120%;height:120;"/>
+            <img src="https://i.imgur.com/4Pv8n5k.png" style="width:10%;height:10;"/>
             <div class="flex-shrink-0">
 
               <a class="shrink-0 flex items-center text-gray-300 fill-current hover:text-white" href="https://railsdevs.com/">
@@ -163,13 +166,15 @@
 
             <!-- Navigation links -->
             <div class="hidden md:block">
-              <div class="ml-10 flex items-baseline space-x-4">
+              <div class="ml-10 flex items-baseline space-x-4" >
                
                   <div class="dropdown">
                   <a active_class="bg-gray-900 text-white" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="https://railsdevs.com/pricing">Categories</a>
                 
                   <div class="dropdown-content">
+                  
                   <a active_class="bg-gray-900 text-white" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="https://railsdevs.com/pricing">Software engineers</a>
+
                   <a active_class="bg-gray-900 text-white" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="https://railsdevs.com/pricing">Designers</a>
                   <a active_class="bg-gray-900 text-white" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="https://railsdevs.com/pricing">System Admin</a>
                   <a active_class="bg-gray-900 text-white" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="https://railsdevs.com/pricing">Sales</a>
@@ -183,9 +188,19 @@
                   </div>
 
              
-                  <a active_class="bg-gray-900 text-white" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="post/contact">Contact us</a>
+                  <a active_class="bg-gray-900 text-white" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"  href="post/contact">Contact us</a>
 
                
+                  <!-- Desktop nav bar -->
+                  <div class="hidden md:block">
+                    <div class="ml-4 flex items-center md:ml-6 space-x-4">
+                      <a class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="post/signin">Sign in</a>
+        
+                      <a class="relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-gray-500 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-gray-500" href="post/register">Register</a>
+                    </div>
+                  </div>
+
+
               </div>
 
 
@@ -193,14 +208,7 @@
             </div>
           </div>
 
-          <!-- Desktop nav bar -->
-          <div class="hidden md:block">
-            <div class="ml-4 flex items-center md:ml-6 space-x-4">
-              <a class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="post/signin">Sign in</a>
-
-              <a class="relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-gray-500 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-gray-500" href="post/register">Register</a>
-            </div>
-          </div>
+         
 
           <div class="-mr-2 flex items-center md:hidden">
             <!-- Mobile menu button -->

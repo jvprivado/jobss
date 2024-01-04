@@ -8,6 +8,7 @@ post "post/update"
 get "post/register"
 get "post/signin"
 get "user/profile"
+get "post/contact"
 
 get "user/view"
   # Defines the root path route ("/")

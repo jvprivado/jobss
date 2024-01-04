@@ -12,7 +12,7 @@ default: &development
 development:
   adapter: mysql2
   database: jobs_development
-  username: root
-  password: 
+  username: llogix
+  password: 123wet123
   host: localhost
 

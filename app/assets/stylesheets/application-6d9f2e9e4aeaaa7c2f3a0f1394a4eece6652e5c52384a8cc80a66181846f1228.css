@@ -2780,7 +2780,7 @@ select {
 
 .bg-gray-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+  background-color: rgb(253 254 255 / var(--tw-bg-opacity));
 }
 
 .bg-yellow-50 {
@@ -2819,7 +2819,7 @@ select {
 }
 .bg-gray-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 0 / var(--tw-bg-opacity));
+  background-color: rgb(250 249 246 / var(--tw-bg-opacity));
 }
   
 
@@ -3149,7 +3149,7 @@ select {
 }
 
 .text-sm {
-  font-size: 0.975rem;
+  font-size: 1rem;
   line-height: 1.25rem;
 }
 
@@ -3373,7 +3373,7 @@ select {
 
 .text-gray-300 {
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-indigo-400 {
